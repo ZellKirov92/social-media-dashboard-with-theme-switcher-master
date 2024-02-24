@@ -8,45 +8,118 @@
 
 body {
     background-color: hsl(0, 0%, 100%);
+    width: 375px;
+    margin: 0;
+}
+
+article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     font-size: 14px;
+    width: 375px;
+    height: 2387px;
     min-width: 375px;
     max-height: 2387px;
+    border: 1px solid black;
 }
 
+h1 {
+    text-align: left;
+}
 
 #facebook {
-    background-color: hsl(208, 92%, 53%);
-    padding-top: 1px;
-}
-
-#div-facebook {
+    border-top: 3px solid hsl(208, 92%, 53%);
+    border-radius: 5px;
     background-color: hsl(230, 22%, 74%);
+    padding-top: 1px;
+    margin: 10px 0 40px 0;
+    width: 320px;
+    height: 170px;
+    text-align: center;
 }
 
 #tweeter {
-    background-color: hsl(203, 89%, 53%);
-}
-
-#div-tweeter {
+    border-top: 3px solid hsl(203, 89%, 53%);
+    border-radius: 5px;
     background-color: hsl(230, 22%, 74%);
+    margin: 10px 0 40px 0;
+    height: 170px;
+    text-align: center;
 }
 
 #instagram {
-    background: linear-gradient(to right, hsl(37, 97%, 70%) 15%, hsl(329, 70%, 58%));
-}
-
-#div-instagram {
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%) 15%, hsl(329, 70%, 58%)) 1;
+    border-radius: 5px;
     background-color: hsl(230, 22%, 74%);
+    margin: 10px 0 40px 0;
+    height: 170px;
+    text-align: center;
 }
 
 #youtube {
-    background-color: hsl(348, 97%, 39%);
+    border-top: 3px solid hsl(348, 97%, 39%);
+    border-radius: 5px;
+    background-color: hsl(230, 22%, 74%);
+    margin: 10px 0 40px 0;
+    height: 170px;
+    text-align: center;
 }
 
-#div-youtube {
+#facebook_page_view {
     background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+#facebook_likes {
+    background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+#instagram_likes {
+    background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+#instagram_profil_view {
+    background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+#tweeter_retweets {
+    background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+#tweeter_likes {
+    background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+#youtube_likes {
+    background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+#youtube_total_views {
+    background-color: hsl(230, 22%, 74%);
+    height: 130px;
+    margin: 10px 0 30px 0;
+    text-align: center;
 }
