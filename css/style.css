@@ -7,8 +7,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: hsl(230, 17%, 14%);
-    width: 375px;
+    max-width: 768px;
     margin: 0;
 }
 
@@ -24,7 +28,7 @@ article {
     max-height: 2387px;
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-image: linear-gradient(to bottom hsl(232, 19%, 15%) 20%, hsl(230, 17%, 14%));
+    background-color: hsl(232, 19%, 15%);
 }
 
 .head_left {
@@ -110,10 +114,13 @@ label:active:after {
     width: 20px;
 }
 
+section {
+    background-color: hsl(228, 28%, 20%);
+}
+
 #facebook {
     border-top: 3px solid hsl(208, 92%, 53%);
     border-radius: 5px;
-    background-color: hsl(228, 28%, 20%);
     padding-top: 1px;
     margin: 10px 0 20px 0;
     height: 170px;
@@ -140,7 +147,6 @@ label:active:after {
 #tweeter {
     border-top: 3px solid hsl(203, 89%, 53%);
     border-radius: 5px;
-    background-color: hsl(228, 28%, 20%);
     margin: 10px 0 20px 0;
     height: 170px;
     text-align: center;
@@ -150,7 +156,6 @@ label:active:after {
     border-top: 3px solid;
     border-image: linear-gradient(to right, hsl(37, 97%, 70%) 15%, hsl(329, 70%, 58%)) 1;
     border-radius: 5px;
-    background-color: hsl(228, 28%, 20%);
     margin: 10px 0 20px 0;
     height: 170px;
     text-align: center;
@@ -159,7 +164,6 @@ label:active:after {
 #youtube {
     border-top: 3px solid hsl(348, 97%, 39%);
     border-radius: 5px;
-    background-color: hsl(228, 28%, 20%);
     margin: 10px 0 20px 0;
     height: 170px;
     text-align: center;
@@ -169,7 +173,6 @@ label:active:after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: hsl(228, 28%, 20%);
     height: 130px;
     border-radius: 5px;
     margin: 10px 0 20px 0;
@@ -225,4 +228,24 @@ label:active:after {
 
 .negative {
     color: hsl(356, 69%, 56%);
+}
+
+.lightTheme {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.articleLightTheme {
+    background-color: hsl(225, 100%, 98%);
+}
+
+.elemSectionLight {
+    background-color: hsl(227, 47%, 96%);
+}
+
+.elemBoldLight {
+    color: hsl(230, 17%, 14%);
+}
+
+.elemTextLight {
+    color: hsl(228, 12%, 44%);
 }
