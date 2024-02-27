@@ -1,3 +1,4 @@
+import {lightOrNotLight} from "../js/eventHover.js";
 const switchButton = document.getElementsByClassName("switch_button")[0];
 switchButton.addEventListener("change", (ev) => {
     const body = document.getElementsByTagName("body")[0];
@@ -7,6 +8,7 @@ switchButton.addEventListener("change", (ev) => {
     const textElements = document.getElementsByClassName("text");
     const backgroundTop = document.getElementsByClassName("backgroundColorTop")[0];
 
+    
     if (switchButton.checked) {
         body.classList.add("lightTheme");
         backgroundTop.classList.add("lightThemeBackgroundTop");
@@ -20,6 +22,7 @@ switchButton.addEventListener("change", (ev) => {
         for (const elem of textElements) {
             elem.classList.add("elemTextLight");
         }
+        lightOrNotLight();
     } 
     else {
         body.classList.remove("lightTheme");
@@ -33,6 +36,6 @@ switchButton.addEventListener("change", (ev) => {
         }
         for (const elem of textElements) {
             elem.classList.remove("elemTextLight");
-        }    
+        }   
     }
 });

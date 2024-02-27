@@ -267,6 +267,14 @@ section {
         padding-left: 40px;
     }
 
+    section:hover {
+        background-color: hsl(228, 12%, 44%);
+    }
+
+    .lightSectionHover {
+        background-color: hsl(225, 100%, 98%);
+    }
+
     hr {
         border: none;
     }
