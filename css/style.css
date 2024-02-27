@@ -12,7 +12,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: hsl(230, 17%, 14%);
-    max-width: 768px;
     margin: 0;
 }
 
@@ -28,7 +27,12 @@ article {
     max-height: 2387px;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: hsl(230, 17%, 14%);
+}
+
+.backgroundColorTop {
     background-color: hsl(232, 19%, 15%);
+    border-radius: 0 0 5px 5px;
 }
 
 .head_left {
@@ -42,10 +46,6 @@ article {
     margin-top: 2px;
     margin-bottom: 0;
     color: hsl(228, 34%, 66%);
-}
-
-main {
-    margin: 10px 20px auto 20px;
 }
 
 hr {
@@ -116,6 +116,7 @@ label:active:after {
 
 section {
     background-color: hsl(228, 28%, 20%);
+    width: 360px;
 }
 
 #facebook {
@@ -136,7 +137,7 @@ section {
 
 .user_descr {
     margin-top: 0;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     color: hsl(228, 34%, 66%);
 }
 
@@ -169,14 +170,18 @@ section {
     text-align: center;
 }
 
+#headerLeft {
+    padding-right: 170px;
+}
+
 .section_stat {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 130px;
     border-radius: 5px;
-    margin: 10px 0 20px 0;
-    padding: 30px 20px 0 20px;
+    margin: 10px 0 15px 0;
+    padding: 30px 0 5px 0;
 }
 
 .section_stat .logo {
@@ -184,7 +189,7 @@ section {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-    margin-left: 100px;
+    margin-left: 130px;
 }
   
 .section_stat .title {
@@ -193,7 +198,7 @@ section {
     grid-row-start: 1;
     grid-row-end: 1;
     text-align: left;
-    padding-right: 30px;
+    padding-left: 20px;
     font-size: 18px;
     font-weight: 400;
     color: hsl(228, 34%, 66%);
@@ -205,8 +210,7 @@ section {
     grid-row-start: 2;
     grid-row-end: 2;
     text-align: left;
-    justify-content: center;
-    margin-right: 50px;
+    padding-left: 20px;
     font-weight: 900;
     font-size: 30px;
 }
@@ -216,9 +220,8 @@ section {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
-    place-self: center;
-    margin-left: 70px;
-    margin-bottom: 15px;
+    text-align: right;
+    margin: 40px 30px 0 5px;
     font-size: 18px;
 }
 
@@ -234,8 +237,12 @@ section {
     background-color: hsl(0, 0%, 100%);
 }
 
-.articleLightTheme {
+.lightThemeBackgroundTop {
     background-color: hsl(225, 100%, 98%);
+}
+
+.articleLightTheme {
+    background-color: hsl(0, 0%, 100%);
 }
 
 .elemSectionLight {
@@ -248,4 +255,98 @@ section {
 
 .elemTextLight {
     color: hsl(228, 12%, 44%);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    article {
+        display: block;
+        width: 1440px;
+        height: 800px;
+        max-height: 800px;
+        max-width: 1420px;
+        padding-left: 40px;
+    }
+
+    hr {
+        border: none;
+    }
+
+    .head_left_paragraph {
+        padding-bottom: 0;
+    }
+
+    .head_switch {
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .head_switch p {
+        padding-right: 5px;
+    }
+    
+    .divGridFirst {
+        display: flex;
+        flex-direction: row;
+        column-gap: 25px;
+        padding-left: 0; 
+        padding-right: 0;   
+    }
+
+
+    #facebook {
+        width: 300px;
+        height: 200px;
+    }
+
+    #tweeter {
+        width: 300px;
+        height: 200px;
+    }
+
+    #instagram {
+        width: 300px;
+        height: 200px;
+    }
+
+    #youtube {
+        width: 300px;
+        height: 200px;
+    }
+
+    .headerLeft {
+        padding-right: 0;
+
+    }
+
+    .divSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+        margin: 5px 0 5px 0; 
+        padding-right: 30px;
+        width: 1280px;
+        height: 350px;
+
+    }
+
+    .section_stat {
+        width: 300px;
+        height: 130px;
+        margin: 0;
+        place-self: center;
+    }
+
+    .user_stat {
+        display:block;
+        padding-top: 10px;
+    }
+
+    .section_stat .logo {
+        margin-right: 30px;
+    }
+
+    .user_total {
+        font-size: 64px;
+    }
 }

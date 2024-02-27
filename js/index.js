@@ -5,9 +5,11 @@ switchButton.addEventListener("change", (ev) => {
     const section = document.getElementsByTagName("section");
     const textBold = document.getElementsByClassName("textBold");
     const textElements = document.getElementsByClassName("text");
+    const backgroundTop = document.getElementsByClassName("backgroundColorTop")[0];
 
     if (switchButton.checked) {
         body.classList.add("lightTheme");
+        backgroundTop.classList.add("lightThemeBackgroundTop");
         articleContent.classList.add("articleLightTheme");
         for(const elemsections of section) {
         elemsections.classList.add("elemSectionLight");
@@ -21,6 +23,7 @@ switchButton.addEventListener("change", (ev) => {
     } 
     else {
         body.classList.remove("lightTheme");
+        backgroundTop.classList.remove("lightThemeBackgroundTop");
         articleContent.classList.remove("articleLightTheme");
         for(const elemsections of section) {
         elemsections.classList.remove("elemSectionLight");

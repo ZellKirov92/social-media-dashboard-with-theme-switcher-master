@@ -8,18 +8,19 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/index.js" type="module" defer></script>
+  <script src="./js/index.js" defer></script>
 </head>
 <body>
   <article class="light_dark">
-    <h1 class="head_left textBold">Social Media Dashboard</h1>
-    <p class="head_left_paragraph text">Total Followers: 23,004</p>
-    <hr>
-    <div class="head_switch">
-      <p class="text">Dark Mode</p><input class="switch_button" type="checkbox" id="switch" /><label class="switch_button" for="switch">Toggle</label>
+    <div class="backgroundColorTop">
+      <h1 class="head_left textBold">Social Media Dashboard</h1>
+      <p class="head_left_paragraph text">Total Followers: 23,004</p>
+      <hr>
+      <div class="head_switch">
+        <p class="text">Dark Mode</p><input class="switch_button" type="checkbox" id="switch"><label class="switch_button" for="switch">Toggle</label>
+      </div>
     </div>
-      
-    <main>
+      <div class="divGridFirst">
       <section id="facebook">
         <p class="user text"><img src="./images/icon-facebook.svg" alt="logo facebook"> @nathanf</p>
         <h2 class="user_total textBold">1987</h2>
@@ -44,48 +45,50 @@
           <p class="user_descr text">SUBSCRIBERS</p>
           <span class="user_stat negative"><img src="./images/icon-down.svg" alt="logo down">144 Today</span>
       </section>
-      <h2 class="textBold">Overview - Today</h2>
+  </div>
+    <h2 id="headerLeft" class="textBold">Overview - Today</h2>
+    <div class="divSection">
       <section class="section_stat" id="facebook_page_view">
         <span class="title text">Page Views</span><img class="logo" src="./images/icon-facebook.svg" alt="logo facebook">
-        <span class="total textBold">87</span>
+        <h2 class="total textBold">87</h2>
         <span class="stat positive"><img src="./images/icon-up.svg" alt="logo Up">3%</span>
       </section>
       <section class="section_stat" id="facebook_likes">
         <span class="title text">Likes</span><img class="logo" src="./images/icon-facebook.svg" alt="logo facebook">
-        <span class="total textBold">52</span>
+        <h2 class="total textBold">52</h2>
         <span class="stat negative"><img src="./images/icon-down.svg" alt="logo down">2%</span>
       </section>
       <section class="section_stat" id="instagram_likes">
         <span class="title text">Likes</span><img class="logo" src="./images/icon-instagram.svg" alt="logo Instagram">
-        <span class="total textBold">5462</span>
+        <h2 class="total textBold">5462</h2>
         <span class="stat positive"><img src="./images/icon-up.svg" alt="logo up">2257%</span>
       </section>
       <section class="section_stat" id="instagram_profil_view">
         <span class="title text">Profile Views</span><img class="logo" src="./images/icon-instagram.svg" alt="logo instagram">
-        <span class="total textBold">52k</span>
+        <h2 class="total textBold">52k</h2>
         <span class="stat positive"><img src="./images/icon-up.svg" alt="logo up">1375%</span>
       </section>
       <section class="section_stat" id="tweeter_retweets">
         <span class="title text">Retweets</span><img class="logo" src="./images/icon-twitter.svg" alt="logo tweeter">
-        <span class="total textBold">117</span>
+        <h2 class="total textBold">117</h2>
         <span class="stat positive"><img src="./images/icon-up.svg" alt="logo up">303%</span>
       </section>
       <section class="section_stat" id="tweeter_likes">
         <span class="title text">Likes</span><img class="logo" src="./images/icon-twitter.svg" alt="logo tweeter">
-        <span class="total textBold">507</span>
+        <h2 class="total textBold">507</h2>
         <span class="stat positive"><img src="./images/icon-up.svg" alt="logo up">553%</span>
       </section>
       <section class="section_stat" id="youtube_likes">
         <span class="title text">Likes</span><img class="logo" src="./images/icon-youtube.svg" alt="logo youtube">
-        <span class="total textBold">107</span>
+        <h2 class="total textBold">107</h2>
         <span class="stat negative"><img src="./images/icon-down.svg" alt="logo down">19%</span>
       </section>
       <section class="section_stat" id="youtube_total_views">
         <span class="title text">Total Views</span><img class="logo" src="./images/icon-youtube.svg" alt="logo Youtube">
-        <span class="total textBold">1407</span>
+        <h2 class="total textBold">1407</h2>
         <span class="stat negative"><img src="./images/icon-down.svg" alt="logo down">12%</span>
       </section>
-  </main> 
+    </div> 
 </article>
   <div class="attribution">
     <p>Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
