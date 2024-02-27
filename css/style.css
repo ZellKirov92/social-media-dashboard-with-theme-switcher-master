@@ -257,7 +257,7 @@ section {
     color: hsl(228, 12%, 44%);
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px){
+@media screen and (min-width: 1024px) {
     article {
         display: block;
         width: 1440px;
